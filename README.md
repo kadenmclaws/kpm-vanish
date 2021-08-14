@@ -1,2 +1,5 @@
 # kpm-vanish-one-page
-Interview piece
+
+Bread for dinner
+
+Open bread/ and run `npm run develop`
