@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #232129;
+  font-family: "Nunito Sans", -apple-system, Roboto, sans-serif, serif;
+}
+
+header nav a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header nav a:not(.no-custom-underline):after {
+  display: block;
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  transform: translateX(50%);
+  left: 50%;
+  right: 50%;
+  transition: 0.1s all;
+  height: 3px;
+  background-color: #5156ea;
+}
+header nav a:not(.no-custom-underline):hover::after {
+  width: 50%;
+  max-width: 66px;
+  left: 0;
+  right: 0;
+}
+.site-title {
+  text-transform: capitalize;
+}
+
+.hero {
+  background-image: url(../assets/images/Bread-Biz-Homepage-1.png);
+  background-position: 0;
+  background-size: cover;
+}
